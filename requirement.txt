@@ -1,0 +1,24 @@
+
+Calculator
+==========
+
+* Addition
+$ calc 1 + 2
+$ 3
+
+
+* Subtraction
+$ calc 1 - 2
+$ -1
+
+* Division
+$ calc 1 / 2
+$ 0.5
+
+* multiplication
+$ calc 2 * 3
+$ 6
+
+* power
+$ calc 2^3
+$ 8
