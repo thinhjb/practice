@@ -1,0 +1,97 @@
+Basic bash commands:
+===================
+
+$ pwd
+Show your current directory
+
+$ ls
+List all the files in the current directory
+
+$ ls -la
+List all the files including hidden files (files that starts with ".", e.g. .gitconfig)
+
+$ cd <path>
+Change directory
+
+$ cd /
+Go to root directory
+
+$ cd ~/
+Go to home directory
+
+$ echo $HOME
+Print your home directory
+
+$ mkdir
+Create a directory
+
+$ rmdir
+Remove an empty directory
+
+$ rm <file>
+Remove a file
+
+$ rm -r <directory>
+Remove a directory with files
+
+$ touch <file>
+Create an empty file
+
+$ vi <file>
+Use vim editor to edit a file
+
+$ nano <file>
+Use nano editor to edit a file
+
+$ find <path> -iname "xyz"
+Look for the file with the name "xyz" under directory <path>
+
+
+git commands:
+============
+$ git fetch <remote name>
+The command above fetches all the updates from the repository <remote name>
+
+$ git status
+Show what files are changed
+
+$ git add <file>
+Add your new change from a file
+
+$ git commit -s
+Commit your new change
+
+$ git push <remote name>
+Push your new change to your remote repository
+
+$ git remote -v
+List all the remote repositories along with their asigned names
+
+$ git grep <line>
+Search for all the files within the git repo that matches this <line>
+
+$ git rebase <remote name>/<remote branch>
+Rebase your current HEAD branch to the remote branch
+
+If your rebase has conflict, after you resolve the conflict add your new change
+$ git add <resolved conflict file>
+Then continue with your next commits
+$ git rebase --continue
+
+$ git checkout <name>
+Change to the branch <name>
+
+$ git branch <name>
+Create a local branch with the name <name> that points to the current branch
+
+$ git checkout -b <name>
+Create a local branch with the name <name> and switch to that created branch
+
+$ git stash
+Stash your uncommited changes to the stash
+
+$ git stash pop
+Pop back your stashed changes
+
+$ git reset --hard <branch/commit>
+Force your current branch to point to the target branch or commit
