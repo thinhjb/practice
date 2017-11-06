@@ -13,7 +13,10 @@ $ -1
 
 * Division
 $ calc 1 / 2
-$ 0.5
+$ 0
+
+$ calc 3 / 2
+$ 1
 
 * multiplication
 $ calc 2 * 3
@@ -22,3 +25,13 @@ $ 6
 * power
 $ calc 2^3
 $ 8
+
+
+public int add(int first, int second); //Kenny
+public int subtract(int first, int second); //Kenny
+public int mult(int first, int second); //Dante
+public int division(int first, int second); //Dante
+public int power(int value, int power); //Dante
+
+user input and output -> Luong
+
