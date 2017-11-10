@@ -1,35 +1,22 @@
 import java.util.Scanner;
 
+
 public class Calculator
 {
 
-    public static int subtract(int first, int second) {
+    public int subtract(int first, int second) {
         return first - second;
     }
 
-    public static int add(int first, int second) {
+    public int add(int first, int second) {
         return first + second;
-    }
-    
-    public static int multiply(int first, int second) {
-        return first * second;
-    }
-    
-    public static int divide(int first, int second) {
-        return first / second;
-    }
-    
-    public static int exponential(int first, int second)
-    {
-    	for (int x= second; x>1; x--)
-    	{first= first*first;}
-    	return first;
-    	
     }
 
     public void test() {
         System.out.println("test");
-    }    
+    }
+    
+}
 
 	public static void main(String[] args) {
 	    int answer=0;
@@ -50,11 +37,11 @@ public class Calculator
 		else if (application.equals("-"))
 		answer = Calculator.subtract(firstnumber, secondnumber);
 		else if (application.equals("*"))
-		answer = Calculator.multiply(firstnumber, secondnumber);
+		answer = Calculator.mult(firstnumber, secondnumber);
 		else if (application.equals("/"))
-		answer = Calculator.divide(firstnumber, secondnumber);
+		answer = Calculator.division(firstnumber, secondnumber);
 		else if (application.equals("^"))
-		answer = Calculator.exponential(firstnumber, secondnumber);
+		answer = Calculator.power(firstnumber, secondnumber);
 		else 
 		{System.out.println("The application is incorrect please try again");
 		error = 1;}
@@ -63,5 +50,3 @@ public class Calculator
 	
 		}
 	}
-}
-
