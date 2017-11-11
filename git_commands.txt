@@ -1,0 +1,31 @@
+Create a branch
+$ git branch <branch name>
+
+Change to a branch <name>
+$ git checkout <branch name>
+
+Reset 1 commit and keeps the commit changes
+$ git reset HEAD~
+
+Reset 2 commits
+$ git reset HEAD~2
+
+Reset one commit and remove the commit changes
+$ git reset --hard HEAD~
+
+Change reference of the current branch to point to another
+$ git reset --hard <target branch>
+
+Push a local branch to upstream (first time)
+$ git push -u origin <local branch>
+
+Update upstream branch
+$ git push origin <local branch>
+
+
+Example:
+Try to understand what the commands below do:
+$ git branch user-io
+$ git reset --hard HEAD~
+$ git push origin -f
+$ git checkout user-io
