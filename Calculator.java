@@ -47,5 +47,12 @@ public class Calculator {
 			if (error == 0)
 				System.out.println("The answer is " + answer);
 		}
+		
+		switch (application) {
+		case "*" : answer = first * second;
+		case "/" : answer = first / second;
+		}
+		
 	}
+
 };
