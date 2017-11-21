@@ -48,11 +48,32 @@ public class Calculator {
 				System.out.println("The answer is " + answer);
 		}
 		
-		switch (application) {
-		case "*" : answer = first * second;
-		case "/" : answer = first / second;
-		}
+
 		
 	}
 
 };
+
+
+public class function2 {
+	double varA = 0;
+	double varB = 0;
+	double sol1 = 0;
+	
+	string operation = "";
+	
+	switch (operation) {
+		case times:
+			sol1 = varA * varB;
+			break;
+		case divide:
+			sol1 = varA / varB;
+			break;
+		case power;
+			sol1 = varA ^ varB;
+			break;
+		return sol1;
+	}
+	
+	return 0;
+}
